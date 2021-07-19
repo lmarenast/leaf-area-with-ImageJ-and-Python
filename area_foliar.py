@@ -36,7 +36,8 @@ def area_foliar():
     area_px = cv2.countNonZero(thresh)
 
     #Se necesitará el dato de ImageJ sobre la escala de pixeles, es decir, cuantos pixeles es un cm en cada imagen.
-    set_scale_imageJ = int(input('Ingrese la escala arrojada por ImageJ:' ))
+    set_scale_imageJ = float(input('Ingrese la escala arrojada por ImageJ:' ))
+    set_scale_imageJ = int(np.floor(set_scale_imageJ))
     area_cm = area_px/(set_scale_imageJ**2)
     area_cm = round(area_cm,2)
 
