@@ -1,5 +1,5 @@
 # leaf-area-with-ImageJ-and-Python
-In this simple program, we calculate the leaf area of an image and the number of pixels per centimeter that imageJ gives us.
+In this simple program, we calculate the area of the sheet of an image with the number of pixels per centimeter that imageJ gives us.
 
 ## Here we show an example of how to do it
 
